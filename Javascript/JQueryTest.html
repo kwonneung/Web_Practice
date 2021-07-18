@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQueryTest</title>
+    <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        function submitjava(){
+            document.getElementById("div1").innerHTML = "반갑습니다.";
+        }
+        
+        function submitjquery(){
+            $("#div1").html("잘지내세요.");
+        }
+
+        function submitjava2(){
+            document.getElementById("div1").setAttribute("style", "border:2px solid red;");
+        }
+
+        function submitjquery2(){
+            $("#div1").css("border","3px dotted blue")
+        }
+
+    </script>
+</head>
+<body>
+    <div id="div1">
+        안녕하세요
+    </div>
+
+    <button type="button" onclick="submitjava();">변환1</button>
+    <button type="button" onclick="submitjquery();">변환2</button><br>
+    <button type="button" onclick="submitjava2();">변환3</button>
+    <button type="button" onclick="submitjquery2();">변환4</button>
+
+</body>
+</html>
+<!-- jquery()의 축약형 $()
+    ()내부의 들어갈 수 있는 인수 1) .클래스이름 2) #아이디이름 3) 태그 
+    $("div > div"): div 태그 바로 아래 자식 중 div태그인 것 선택
+    $("div div") div 태그 아래 자식들 중 div 태그를 모두 선택
+    $(" .no div "): no 라는 클래스 아래 자식들 중 모든 div 태그 선택
+    $("yes > div"): yes라는 아이디를 가진 태그 바로 아래 자식 중 div 태그 선택
+    $( "#yes" ).hasClass( "myclass" ); id 가 yes인 곳에 myclass 클래스가 존재하는지 확인
+    addClass()는 클래스 추가, removeClass()는 클래스 삭제
+    $(선택).append(추가할 부분); 요소의 마지막에 새로운 것을 넣는 코드
+    $( 선택 ).prepend( 추가할부분 ); 요소의 앞에 새로운 것을 넣는 코드--> 

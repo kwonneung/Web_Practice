@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='UTF-8'>
+    <title>JQueryTest</title>
+    <script src= "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        function addCell(){
+            $("#myTable > tbody > tr").append('<td>4</td>');
+        }
+    </script>
+</head>
+
+<body>
+    <table id="myTable" border="1" cellspacing="1">
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button type="button" onclick="addCell();">추가하기</button>
+    
+</body>
+</html>
