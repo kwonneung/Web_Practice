@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+ 
+    <style>
+ 
+      img {
+        width: 200px;
+        height: 150px;
+      }
+ 
+      .snowimages1 {
+        top: 110px;
+        left: 40px;
+        position: absolute;
+        transform: skewY(30deg);
+      }
+ 
+    </style>
+ 
+  </head>
+ 
+  <body>
+      <div class="snowimages1">
+          <img src="../image/lionImg.png">
+      </div>
+  </body>
+ 
+</html>
+
+
+<!--border-radius: 모서리를 둥글게 만듦
+    transfrom:skewX (or skewY); 회전시킴.
+
+    <position>
+    1) static: 기본값
+    2) relative: static을 기준으로 위치를 잡음(여백을 주어 이동)
+    3) absolute: 가장 가까운 부모 혹은 조상 요소 중 relative인 요소를 기준으로 위치를 잡음
+    4) fixed: 화면에 고정, 스크롤 내려도 같은 위치에서 같이 움직임.
+    position:relative; left:100px; relative 속성 부여, 왼쪽 100px 여백
+
+    <z-index>
+    1) position이 relative 이거나 absolute여야 동작 함.
+    2) 기본값은 auto로 설정, 정수로 설정 가능 (양수, 음수 가능)
+    3) 번호가 높은 레이어부터 보여짐
+    4) 부모 태그의 값을 우선시 함.-->

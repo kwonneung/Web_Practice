@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달력</title>
+    
+    <style>
+        .saturday{
+            color: blue;
+            font-size: 2em;
+            text-align: center;
+        }
+        .sunday{
+            color:red;
+            font-size: 2em;
+            text-align: center;
+        }
+        .weekday{
+            font-size: 2em;
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+        function holiday(){
+            alert("신나는 휴일! 집에서 쉬기");
+        }
+    </script>
+</head>
+<body>
+    <table cellspacing=0 cellpadding=20 width="100%" style="text-align: center;">
+        <tr>
+            <td colspan="7" style="color: green; font-size: 40px;">
+                2019년 6월
+            </td>
+        </tr>
+        <tr>
+            <td class="sunday">日</td>
+            <td class="weekday">月</td>
+            <td class="weekday">火</td>
+            <td class="weekday">水</td>
+            <td class="weekday">木</td>
+            <td class="weekday">金</td>
+            <td class="saturday">土</td>      
+        </tr>
+        <tr>
+            <td colspan="6"></td>
+            <td class="saturday">1</td>
+        </tr>
+        <tr>
+            <td class="sunday">2</td>
+            <td class="weekday">3</td>
+            <td class="weekday">4</td>
+            <td class="weekday">5</td>
+            <td style="cursor:pointer; color: red; font-size: 2em; text-align: center;" onclick="holiday();">6</td>
+            <td class="weekday">7</td>
+            <td class="saturday">8</td>
+        </tr>
+        <tr>
+            <td class="sunday">9</td>
+            <td class="weekday">10</td>
+            <td class="weekday">11</td>
+            <td class="weekday">12</td>
+            <td class="weekday">13</td>
+            <td class="weekday">14</td>
+            <td class="saturday">15</td>
+        </tr>
+        <tr>
+            <td class="sunday">16</td>
+            <td class="weekday">17</td>
+            <td class="weekday">18</td>
+            <td class="weekday">19</td>
+            <td class="weekday">20</td>
+            <td class="weekday">21</td>
+            <td class="saturday">22</td>
+            
+        </tr>
+        <tr>
+            <td class="sunday">23</td>
+            <td class="weekday">24</td>
+            <td class="weekday">25</td>
+            <td class="weekday">26</td>
+            <td class="weekday">27</td>
+            <td class="weekday">28</td>
+            <td class="saturday">29</td>
+        </tr>
+        <tr>
+            <td class="sunday">30</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<!--cursor: pinter; 커서를 올리면 손모양으로 변경
+    font-weight:bold; 글자를 굵게 
+    background-color: yellow; 배경색을 노란색으로-->
