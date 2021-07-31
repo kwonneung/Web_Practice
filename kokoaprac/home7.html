@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selector</title>
+  </head>
+  <style>
+    body {
+      height: 1000vh;
+      margin: 50px;
+    }
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: wheat;
+      position: relative;
+    }
+    span {
+      background-color: tomato;
+    }
+    /* span:nth-child(2) {
+      background-color: teal;
+    }
+    span:nth-child(even) {
+      background-color: teal;
+    } */
+    span:nth-child(3n + 1) {
+      background-color: teal;
+    }
+    div:first-child {
+      background-color: tomato;
+    }
+    div:last-child {
+      background-color: teal;
+    }
+  </style>
+  <body>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
