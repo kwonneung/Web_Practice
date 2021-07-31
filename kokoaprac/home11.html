@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Colors and Variables</title>
+    <style>
+      :root {
+        --main-color: #fcce00;
+        --default-border: 1px solid var(--main-color);
+      }
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      p {
+        background-color: var(--main-color);
+      }
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Sometimes the right path is not the easiest one. I don’t want to survive.
+      Want to live the life I want.
+    </p>
+    <div>
+      <a href="#">website</a>
+    </div>
+  </body>
+</html>
+
+<!--[3 color systems]
+  1. hexadecimal color #000000
+  2. rgb (red, green, blue)
+  3. rgba: alpha = transparency(투명도) (red, green, blue, alpha)
+
+  [custom property = variable]
+  :root은 기본적으로 모든 document의 뿌리, :root에 변수 설정
+  --변수명으로 설정, 변수명 내의 띄어쓰기는 -로 채운다.
+-->
