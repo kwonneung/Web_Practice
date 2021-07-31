@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Combinators</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        margin: 0, 10;
+        border-radius: 10px;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      p span {
+        color: whitesmoke;
+      }
+      p + span {
+        background-color: yellow;
+      }
+      p ~ span {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        The World Wide Web (WWW), commonly known as the Web, is an information
+        system where documents and other web resources are identified by Uniform
+        Resource Locators (URLs, such as https://example.com/), which may be
+        interlinked by hyperlinks, and are accessible over the Internet.
+        <span>inside</span>
+      </p>
+      <span>sibling</span>
+      <address>block</address>
+      <span>sibling</span>
+    </div>
+  </body>
+</html>
+<!--
+  case 1) div span: div 하위의 span을 가리킴. diriect children이 아니어도 동작
+  case 2) div > span: div의 direct child인 span을 가리킴.
+  case 3) div + span: div의 sibling 중 div 바로 다음의 span을 가리킴.
+  case 4) div ~ span: div의 sibling 중 span을 가리킴.
+-->
