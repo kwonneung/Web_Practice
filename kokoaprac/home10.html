@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>States</title>
+    <style>
+      body {
+        padding: 5px;
+        border-radius: 10px;
+      }
+      button:active {
+        background-color: tomato;
+      }
+      button:hover {
+        background-color: yellow;
+      }
+      input:focus {
+        background-color: slategray;
+      }
+      a:visited {
+        color: goldenrod;
+      }
+      form {
+        border: 5px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      form:focus-within {
+        border-color: seagreen;
+      }
+      form:hover input {
+        background-color: sienna;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>Hello</button>
+    </div>
+    <form>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
+    <a href="https://amazon.com">Go to amazon</a>
+  </body>
+</html>
+<!--
+  1) active : 대상을 클릭하고 있는 상태
+  2) hover : 마우스가 대상 위에 있을때의 상태
+  3) focus : active와 비슷하다고 생각될 수 있는데, 키보드로 선택된 상태
+  4) visited : 방문했던 링크에 효과 적용
+  5) focus-within : 자식 요소에 focus가 적용되면 부모 요소에 효과를 적용
+  6) tag:State other_tag{} : tag:State인 경우 other_tag에 효과 적용
+-->
