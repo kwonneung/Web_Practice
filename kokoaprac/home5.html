@@ -13,7 +13,7 @@
         height: 300px;
         color: white;
       }
-      #green {
+      #fixed {
         position: fixed;
         background-color: teal;
         opacity: 0.2;
@@ -24,12 +24,19 @@
         background-color: bisque;
         width: 350px;
       }
+      #static {
+        position: static;
+        background-color: blue;
+        opacity: 0.2;
+      }
     </style>
   </head>
   <body>
-    <div id="green">1</div>
+    <div id="fixed">fixed</div>
     <div id="different">2</div>
+    <div id="static">static</div>
   </body>
 </html>
 <!-- position: fixed를 사용하면 스크롤해도 고정된 자리에 위치.
-    레이어 자체가 맨 앞에 위치.-->
+    레이어 자체가 맨 앞에 위치.
+    static: 레이아웃이 박스를 처음 위치하는 곳에 위치-->
