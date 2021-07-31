@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Absolute</title>
+  </head>
+  <style>
+    body {
+      height: 1000vh;
+      margin: 50px;
+    }
+    div {
+      width: 300px;
+      height: 300px;
+      background-color: wheat;
+      position: relative;
+    }
+    .green {
+      background-color: teal;
+      position: relative;
+      top: -10px;
+      left: -10px;
+      height: 100px;
+      width: 100px;
+    }
+    #absolute {
+      background-color: skyblue;
+      position: absolute;
+      bottom: 0;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+  <body>
+    <div>
+      <div class="green"></div>
+      <div id="absolute"></div>
+    </div>
+  </body>
+</html>
+<!--
+  Relative: Cascading 된 후의 세부위치를 조정할 수 있음.
+  Absolute: 가장 가까운 relative인 부모 태그 기준으로 세부위치 조정.
+            조건에 맞는 부모태그 없으면 body 태그 기준.
+-->
