@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pseudo Selector 2</title>
+    <style>
+      input {
+        border: 2px solid wheat;
+      }
+      /* input:optional {
+        border: 2px solid wheat;
+      } */
+      input:required {
+        border-color: tomato;
+      }
+      input[type='password'] {
+        background-color: thistle;
+      }
+      input[placeholder='username'] {
+        background-color: gainsboro;
+      }
+      input[placeholder~='name'] {
+        background-color: plum;
+      }
+      input[placeholder*='name'] {
+        background-color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="username" />
+        <input type="text" placeholder="first name" />
+        <input type="text" placeholder="last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+  </body>
+</html>
+<!--
+tag[attribute = "value"] : 속성의 값이 "value"인 태그를 모두적용
+tag[attribute ~= "value"] : 앞뒤에 공백이 있는 상태에서 "value" 값을 포함한 모든 tag 적용
+tag[attribute *= "value"] : 앞뒤 공백 상관없이 "value" 값을 포함한 모든 tag 적용
+ex) abcde value fghij 와 abcdevaluefghij 의 차이
+tag:required{} : required 속성을 가진 것 선택
+(필수적인)
+tag:optional{} : required 속성이 없는 것 선택
+-->
