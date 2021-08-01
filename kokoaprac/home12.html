@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transitions</title>
+    <style>
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: underline;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 50px;
+        transition: background-color 5s ease-in-out, color 5s;
+        transition: all 5s ease-in-out;
+      }
+      a:hover {
+        border-radius: 20px;
+        background-color: wheat;
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go Home</a>
+  </body>
+</html>
+
+<!--[Transition]
+  상태 변화를 부드럽게 에니메이션화 시키는 속성
+  1) 우선 상태변화를 정의 해줘야 한다. 
+    ex) a:hover{} 내부에 정의
+  2) transition은 초기상태쪽에 (=root)정의한다. 
+    ex) a:hover{} 아닌 a{} 에 정의
+  
+  ease-in function : 브라우저에게 변화하는 방법을 알려주는 역할
+  ㄴlinear - 변화 그래프가 직선
+  ㄴease-in - 시작과 끝이 빠름
+  ㄴease-out - 시작과 끝이 느림
+  ㄴease-in-out - 시작이 빠르고 끝이 느림
+  all : 변화 요소를 한번에 다룬다.
+  ㄴ따로 다루고 싶으면 각각 써주면 됨
+
+  cubic-bezier(0, 0, 0, 0); 으로 직접 설정할수도 있다.
+-->
