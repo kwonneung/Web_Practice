@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transformations</title>
+    <style>
+      img {
+        border: 2px solid black;
+        border-radius: 50%;
+        transition: transform 5s ease-in-out;
+      }
+      img:hover {
+        transform: rotateX(50deg) rotateY(60deg) rotateZ(50deg) scaleX(0.3)
+          scaleY(2) translate(300px);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="logan.png" />
+    <span>This is Logan</span>
+  </body>
+</html>
+
+<!--[Transformations]
+  한 요소를 변형(transformation) 시킴
+-->
