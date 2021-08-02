@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Media Query</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: darkgray;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (max-width: 600px) {
+        div {
+          background-color: tomato;
+        }
+      }
+      /* 모바일 환경에서 가로(landscape), 세로모드(portrait) */
+      @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: portrait) {
+        div {
+          background-color: turquoise;
+        }
+      }
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>Please flip your phone</span>
+  </body>
+</html>
+
+<!--[Media Query]
+  CSS를 이용해서 사용자의 스크린의 사이즈를 알 수 있는 방법.
+  @media screen and (min/max -width:00px)로 스크린 사이즈별 조건 변화 적용.
+  @media screen and (orientation: landscape/portrait)으로 모바일 가로, 세로 조건.
+  *브라우저 inspect의 device toolbar를 이용하여 핸드폰 기종 별 사이즈로 브라우저 보기 가능.
+-->cd
